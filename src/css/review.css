@@ -1,4 +1,58 @@
-.reviews-wrapper {
+.reviews-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-color: #F8F8F9;
-  height: 2900px;
+  padding: 0 140px 0 140px;
+  height: auto;
+  background-image: url('../imgFolder/secondary_shapes.png');
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  /* background-position:center bottom; */
+  background-position: 100% 110%;
+}
+
+.review-logo-text {
+  background-color: #F8F8F9;
+  width: 100vw;
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-size: 64px;
+  font-style: normal;
+  color: #C4752A;
+  padding-bottom: 88px;
+}
+
+.review-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F8F8F9;
+  margin-bottom: 32px;
+}
+
+
+.review-card {
+  height: 330px;
+  min-width: 1220px;
+  margin: 32px 32px 0 32px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+
+.review-final {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-family: "Aleo", serif;
+  font-weight: 700;
+  font-size: 40px;
+  gap: 56px;
 }

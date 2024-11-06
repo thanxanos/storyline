@@ -1,4 +1,58 @@
 .footer-wrapper {
+  bottom:0;
+
+  display: flex;
+  flex-direction: row;
   background-color: #7978A4;
-  height: 280px;
+  justify-content: space-around;
 }
+
+.footer-wrapper h2 {
+  font-family: "Aleo", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.customer-wrapper {
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-wrapper {
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-wrapper {
+  width: 40%;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletter-wrapper .email-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  margin-right: 24px;
+}
+
+.newsletter-wrapper .email-input[type=text] {
+  background-color: #7978A4;
+  color: white;
+}
+
+.newsletter-wrapper .email-input::placeholder {
+  color: #BCBBD2;
+}
+
+.newsletter-wrapper form {
+  display: flex;
+  flex-direction: row;
+}
+
+/* #BCBBD2 */
