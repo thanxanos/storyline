@@ -11,7 +11,7 @@ const HeroSection = () => {
         <h3 data-aos="fade-up" delay="150" data-aos-duration="1200" className='h3-text'>Fantasy Subscription Box</h3>
         <p data-aos="fade-up" delay="150" data-aos-duration="1200" className='p-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
       </div>
-    <button className='arrow-btn'><FaArrowDown /></button>
+
     </div>
   )
 }

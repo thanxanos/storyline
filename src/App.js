@@ -5,6 +5,7 @@ import BookRotator from './components/BookRotator'
 import MidSection from './components/MidSection'
 import Reviews from './components/Reviews'
 import Footer from './components/Footer'
+import BookSelection from './components/BookSelection.js'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -37,8 +38,9 @@ function App() {
   return (
     <div className="main-wrapper">
       <Header/>
-        <BookRotator />
+      <BookRotator />
       <MidSection />
+      <BookSelection/>
       <Reviews/>
       <Footer/>
     </div>

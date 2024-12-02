@@ -1,0 +1,36 @@
+.book-selection-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #97BDAD;
+  height: auto;
+  padding: 56px 0 56px 0px;
+}
+
+.card {
+  height: auto;
+  width: 370px; 
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  margin: 24px;
+}
+
+.card-wrapper {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.book-img {
+  margin-top: 70px;
+  width: 130px;
+  height: 180px;
+}
+
+.card-title {
+  text-align: center;
+}
