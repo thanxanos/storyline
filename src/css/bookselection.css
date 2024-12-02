@@ -28,7 +28,7 @@
 .book-img {
   margin-top: 70px;
   width: 130px;
-  height: 180px;
+  height: auto;
 }
 
 .card-title {
