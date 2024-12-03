@@ -1,9 +1,8 @@
 import React from 'react'
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
+import LoginSignup from './LoginSignup';
 import '../css/header.css'
 
 const Header = () => {
@@ -23,6 +22,7 @@ const Header = () => {
           <Link to='/login'><button type="submit" className='user-btn'>            
           <FontAwesomeIcon icon={faUser} />
           </button></Link>
+          <LoginSignup trigger={false}/>
       </div>
       </div>
     </div>

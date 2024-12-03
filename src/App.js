@@ -5,7 +5,6 @@ import Landing from './components/Landing.js'
 import ShopPage from './components/ShopPage.js'
 import AboutPage from './components/AboutPage.js'
 import ContactPage from './components/ContactPage.js'
-import LoginSignup from './components/LoginSignup.js';
 import Footer from './components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -52,7 +51,6 @@ function App() {
             <Route path="/shop" Component={ShopPage} />
             <Route path="/about" Component={AboutPage} />
             <Route path="/contact" Component={ContactPage} />
-            <Route path="/login" Component={LoginSignup} />
           </Routes>
           <Footer />  
         </div>
