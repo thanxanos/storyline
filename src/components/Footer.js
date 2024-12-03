@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='attribute'>
-          <a href="https://www.flaticon.com/free-icons/startup" title="startup icons">Startup icons created by Upnow Graphic - Flaticon</a>
+          <a href="https://www.flaticon.com/authors/upnow-graphic" title="icons">Icons created by Upnow Graphic - Flaticon</a>
           <p><a href="https://www.flaticon.com/free-stickers/reading" title="reading stickers">Reading sticker created by Stickers - Flaticon</a></p>
         </div>
     </div>

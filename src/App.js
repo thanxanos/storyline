@@ -1,13 +1,21 @@
 import './App.css';
 import './css/herofull.css'
 import Header from './components/Header'
-import BookRotator from './components/BookRotator'
-import MidSection from './components/MidSection'
-import Reviews from './components/Reviews'
+import Landing from './components/Landing.js'
+import ShopPage from './components/ShopPage.js'
+import AboutPage from './components/AboutPage.js'
+import ContactPage from './components/ContactPage.js'
+import LoginSignup from './components/LoginSignup.js';
 import Footer from './components/Footer'
-import BookSelection from './components/BookSelection.js'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+
 
 AOS.init();
 // You can also pass an optional settings object
@@ -36,14 +44,19 @@ AOS.init({
 
 function App() {
   return (
-    <div className="main-wrapper">
-      <Header/>
-      <BookRotator />
-      <MidSection />
-      <BookSelection/>
-      <Reviews/>
-      <Footer/>
-    </div>
+    <Router>
+        <div className="main-wrapper">    
+        <Header />
+        <Routes>
+            <Route path="/" Component={Landing} />
+            <Route path="/shop" Component={ShopPage} />
+            <Route path="/about" Component={AboutPage} />
+            <Route path="/contact" Component={ContactPage} />
+            <Route path="/login" Component={LoginSignup} />
+          </Routes>
+          <Footer />  
+        </div>
+    </Router>
   );
 }
 

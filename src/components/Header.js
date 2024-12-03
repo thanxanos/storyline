@@ -1,5 +1,9 @@
 import React from 'react'
-import { LuSearch } from "react-icons/lu";
+import {
+  Link
+} from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 import '../css/header.css'
 
 const Header = () => {
@@ -8,16 +12,17 @@ const Header = () => {
       <div className='sub-header-wrapper'>
         <div className='link-wrapper'>
           <ul>
-            <li><a href="#0">boxes</a></li>
-            <li><a href="#0">shop</a></li>
-            <li><a href="#0">about us</a></li>
-            <li><a href="#0">contact</a></li>
+            <li><Link to='/'>home</Link></li>
+            <li><Link to='/shop'>shop</Link></li>
+            <li><Link to='/about'>about us</Link></li>
+            <li><Link to='/contact'>contact</Link></li>
           </ul>
         </div>
         <div className='side-wrapper'>
-          <div className='search-wrapper'><input type="text" placeholder="search"></input><LuSearch className="search-icon" />
-          </div>
-          <button type="submit" className='primary-btn'>Sign Up</button>
+          <button type="submit" className='secondary-btn'>Subscribe Now</button>
+          <Link to='/login'><button type="submit" className='user-btn'>            
+          <FontAwesomeIcon icon={faUser} />
+          </button></Link>
       </div>
       </div>
     </div>
