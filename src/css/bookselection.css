@@ -10,11 +10,15 @@
 }
 
 .card {
+  position: relative;
   height: auto;
   width: 370px; 
   border-radius: 15px;
   background-color: #FFFFFF;
   margin: 24px;
+  transition: 0.5s;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+	transform: translateY(0px);
 }
 
 .card-wrapper {
@@ -22,15 +26,40 @@
   padding: 24px;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 .book-img {
   margin-top: 70px;
-  width: 130px;
+  width: 200px;
   height: auto;
 }
 
 .card-title {
+  font-family: "Aleo", serif;
   text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 8px;
+}
+
+
+
+.card:hover {
+	transform: translateY(-20px);
+}
+
+
+
+.card .card-wrapper button {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(20px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.card .card-wrapper:hover button {
+	transform: translateY(0px);
+	opacity: 1;
 }

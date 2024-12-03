@@ -8,28 +8,28 @@ import magicpotionImg from '../imgFolder/magic-potion.png'
 const BookSelection = () => {
   return (
     <div className='book-selection-wrapper'>
+       <div className='card'>
+          <div className='card-wrapper'>
+            <img className='book-img' src={magicpotionImg} />
+            <p className='card-title'>Fantasy</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
+            <button type="submit" className='secondary-btn'>Learn More</button>
+          </div>
+      </div>
       <div className='card'>
           <div className='card-wrapper'>
             <img className='book-img' src={romanceImg} />
-            <h3 className='card-title'>Lorem ipsum dolor</h3>
+            <p className='card-title'>Romance</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
-            <button type="submit" className='primary-btn'>Read More</button>
+            <button type="submit" className='secondary-btn'>Learn More</button>
           </div>
       </div>
       <div className='card'>
           <div className='card-wrapper'>
             <img className='book-img' src={scienceImg} />
-            <h3 className='card-title'>Lorem ipsum dolor</h3>
+            <p className='card-title'>Science Fiction</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
-            <button type="submit" className='primary-btn'>Read More</button>
-          </div>
-      </div>
-      <div className='card'>
-          <div className='card-wrapper'>
-            <img className='book-img' src={magicpotionImg} />
-            <h3 className='card-title'>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
-            <button type="submit" className='primary-btn'>Read More</button>
+            <button type="submit" className='secondary-btn'>Learn More</button>
           </div>
       </div>
     </div>

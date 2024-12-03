@@ -11,7 +11,7 @@
   height: auto;
   width: 370px; 
   border-radius: 15px;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   margin: 24px;
 }
 
@@ -21,6 +21,11 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+.book-logo-img {
+  width: 300px;
+  height: auto;
 }
 
 /* .btm-gradient {
