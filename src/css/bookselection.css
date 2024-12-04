@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  position: relative;
   background-color: #97BDAD;
   height: auto;
   padding: 56px 0 56px 0px;
@@ -43,19 +44,28 @@
   margin: 8px;
 }
 
-
-
 .card:hover {
 	transform: translateY(-20px);
 }
 
+.card:hover .hover-text {
+	transform: translateY(80px);
+  transition: 0.2s;
+	opacity: 0;
+}
 
+.hover-text {
+  font-family: "Aleo", serif;
+  font-weight: 600;
+  color:rgb(126, 126, 126);
+  transform: translateY(50px);
+}
 
 .card .card-wrapper button {
 	list-style: none;
 	margin: 0 10px;
 	transform: translateY(20px);
-	transition: 0.5s;
+	transition: 0.2s;
 	opacity: 0;
 }
 

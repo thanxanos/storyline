@@ -4,8 +4,11 @@ import Header from './components/Header'
 import Landing from './components/Landing.js'
 import ShopPage from './components/ShopPage.js'
 import AboutPage from './components/AboutPage.js'
+import ErrorPage from './components/ErrorPage.js'
 import ContactPage from './components/ContactPage.js'
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer'
+import BoxPage from './components/BoxPage.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -43,18 +46,21 @@ AOS.init({
 
 function App() {
   return (
-    <Router>
+    <div className='App'>
         <div className="main-wrapper">    
         <Header />
         <Routes>
             <Route path="/" Component={Landing} />
+            <Route path='/boxes' Component={BoxPage} > </Route>
             <Route path="/shop" Component={ShopPage} />
             <Route path="/about" Component={AboutPage} />
             <Route path="/contact" Component={ContactPage} />
+            <Route path="/*" Component={ErrorPage}/>
           </Routes>
           <Footer />  
         </div>
-    </Router>
+      <ScrollToTop />
+    </div>
   );
 }
 

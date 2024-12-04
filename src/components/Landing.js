@@ -1,5 +1,5 @@
 import React from 'react'
-import BookRotator from './BookRotator.js'
+import BookRotator from './LeftLogo.js'
 import MidSection from './MidSection.js'
 import Reviews from './Reviews.js'
 import BookSelection from './BookSelection.js'

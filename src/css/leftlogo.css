@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.hero-card {
+.hero-card-wrapper {
   height: auto;
   width: 370px; 
   border-radius: 15px;
@@ -15,7 +15,7 @@
   margin: 24px;
 }
 
-.hero-card-wrapper {
+.hero-card {
   display: flex;
   padding: 24px;
   flex-direction: column;

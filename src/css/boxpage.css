@@ -1,0 +1,14 @@
+#fantasy {
+  height: 600px;
+  background-color: azure;
+}
+
+#romance {
+  height: 600px;
+  background-color:blanchedalmond;
+}
+
+#science-fiction {
+  height: 600px;
+  background-color:rgb(216, 205, 255);
+}

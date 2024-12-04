@@ -1,4 +1,5 @@
 import '../css/footer.css'
+import { Link } from "react-router-dom";
 import React from 'react'
 
 const Footer = () => {
@@ -7,16 +8,25 @@ const Footer = () => {
       <div className='footer-wrapper'>
         <div className='customer-wrapper'>
           <h2>Customers</h2>
-          <button className='secondary-btn'>FAQ</button>
-          <button className='secondary-btn'>Customer Support</button>
-          <button className='secondary-btn'>Terms of Service</button>
+          <Link to='/contact'>
+            <button className='secondary-btn'>FAQ</button></Link>
+          <Link to='/contact'>
+            <button className='secondary-btn'>Customer Support</button>
+          </Link>
+          <Link to='/contact'>
+            <button className='secondary-btn'>Terms of Service</button>
+          </Link>
         </div>
 
         <div className='book-wrapper'>
           <h2>Books</h2>
-          <button className='secondary-btn'>Our Writers</button>
-          <button className='secondary-btn'>Our Artists</button>
-          <button className='secondary-btn'>Past Editions</button>
+          <Link to='/about'>
+            <button className='secondary-btn'>Our Writers</button></Link>
+          <Link to='/about'>
+            <button className='secondary-btn'>Our Artists</button></Link>
+          <Link to='/shop'>
+            <button className='secondary-btn'>Past Editions</button>
+          </Link>
         </div>
 
         <div className='newsletter-wrapper'>

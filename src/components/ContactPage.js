@@ -3,7 +3,11 @@ import '../css/contactpage.css'
 
 const ContactPage = () => {
   return (
-    <div className="contact-wrapper">ContactPage</div>
+    <div className="contact-wrapper">
+      <p>FAQ</p>
+      <p>Customer Support</p>
+      <p>Terms of Service</p>
+    </div>
   )
 }
 

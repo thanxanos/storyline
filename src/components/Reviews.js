@@ -1,5 +1,6 @@
 import '../css/review.css'
 import React from 'react'
+import { Link } from "react-router-dom";
 import secondaryShapes from '../imgFolder/secondary_shapes.png'
 
 const Reviews = () => {
@@ -18,7 +19,10 @@ const Reviews = () => {
         <div className='review-card'>
         </div>
       </div>
-    <div className='review-final'><p>Excited? So are we!</p><button className='primary-btn'>Get Started</button></div>
+    <div className='review-final'>
+      <p>Excited? So are we!</p>
+      <Link to='/shop'><button className='primary-btn'>Get Started</button></Link>
+      </div>
     {/* <img className='secondary-shapes' src={secondaryShapes} /> */}
     </div>
   )

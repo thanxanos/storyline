@@ -1,30 +1,16 @@
-import '../css/bookrotator.css';
+import '../css/leftlogo.css';
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-scroll';
-import HeroSection from '../components/HeroSection';
+import HeroSection from './HeroSection';
 import bookImg from '../imgFolder/book_logo.png';
 
 
-const BookRotator = () => {
-  const [visible, setVisible] = useState(false);
-  const [navbar, setNavbar] = useState(false);
-  const showNavbar = () => setNavbar(!navbar);
-  useEffect(() => {
-    document.addEventListener("scroll", e => {
-      let scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 5){
-        setVisible(true)
-      } else {
-        setVisible(false)
-      }
-    })
-  }, [])
-
+const LeftLogo = () => {
   return (
     <div className="hero-wrapper">
       <div className='bookwrapper'>
-            <div className='hero-card'>
-              <div className='hero-card-wrapper'>
+            <div className='hero-card-wrapper'>
+              <div className='hero-card'>
                 <img className='book-logo-img' src={bookImg} />
                 <Link 
                 to="book-sub" 
@@ -43,4 +29,4 @@ const BookRotator = () => {
   )
 }
 
-export default BookRotator
+export default LeftLogo

@@ -3,7 +3,10 @@ import '../css/aboutpage.css'
 
 const AboutPage = () => {
   return (
-    <div className='about-wrapper'>AboutPage</div>
+    <div className='about-wrapper'>
+      <p>Our Writers</p>
+      <p>Our Artists</p>
+    </div>
   )
 }
 

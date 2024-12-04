@@ -1,11 +1,10 @@
-.footer-column{
+.footer-column {
   display: flex;
   flex-direction: column;
   background-color: #7978A4;
-  bottom:0;
 }
 
-.footer-wrapper {
+.footer-wrapper  {
   background-color: #7978A4;
   display: flex;
   flex-direction: row;
@@ -19,10 +18,18 @@
   color: #FFFFFF;
 }
 
+.footer-wrapper a {
+  all: unset;
+}
+
 .customer-wrapper {
   margin: 32px auto;
   display: flex;
   flex-direction: column;
+}
+
+.customer-wrapper button {
+  width: 100%;
 }
 
 .book-wrapper {

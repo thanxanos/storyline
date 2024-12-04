@@ -118,3 +118,22 @@ body {
 .user-btn:hover svg {
   color: #C4752A;
 }
+
+.close-btn {
+  border-radius: 50px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 14px 17px 14px 17px;
+  cursor: pointer;
+	transition: 0.5s;
+  margin-left: 24px;
+}
+
+.close-btn:hover {
+  border-radius: 50px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 14px 17px 14px 17px;
+  cursor: pointer;
+  margin-left: 24px;
+}

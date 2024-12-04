@@ -1,7 +1,23 @@
 
 .shop-wrapper {
-  background-color: #C4752A;
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.search-results {
+  background-color: #F8F8F9;
+  height: 100vh
+}
+
+.side-menu {
+  flex-grow: 1;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
 }
 
 .search-wrapper {
@@ -13,16 +29,15 @@
   border-radius: 50px;
   background-color: #ffff;
   align-items: center;
-  justify-content: center;
   padding: 0 16px 0 16px;
 }
 
-.shop-wrapper input {
+.search-results input {
   border-style: none;
   width: 100%;
 }
 
-.shop-wrapper button {
+.search-results button {
   min-width: 170px;
   margin-left: 16px;
 }
