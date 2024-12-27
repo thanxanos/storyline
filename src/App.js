@@ -46,7 +46,8 @@ AOS.init({
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App'>    
+    <Router>
         <div className="main-wrapper">    
         <Header />
         <Routes>
@@ -59,7 +60,8 @@ function App() {
           </Routes>
           <Footer />  
         </div>
-      <ScrollToTop />
+      <ScrollToTop />    
+      </Router>
     </div>
   );
 }

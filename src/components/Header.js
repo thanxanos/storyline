@@ -14,7 +14,8 @@ const Header = () => {
       <div className='sub-header-wrapper'>
         <div className='link-wrapper'>
           <ul>
-            <li><Link to='/'><img className='book-stack' src={bookStack} /></Link></li>
+            {/* <li><Link to='/'><img className='book-stack' src={bookStack} /></Link></li> */}
+            <li><Link to='/'>storyline</Link></li>
             <li><Link to='/boxes'>boxes</Link></li>
             <li><Link to='/shop'>shop</Link></li>
             <li><Link to='/about'>about us</Link></li>
