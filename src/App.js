@@ -6,7 +6,7 @@ import ShopPage from './components/ShopPage.js'
 import AboutPage from './components/AboutPage.js'
 import ErrorPage from './components/ErrorPage.js'
 import ContactPage from './components/ContactPage.js'
-import ScrollToTop from './components/ScrollToTop';
+// import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer'
 import BoxPage from './components/BoxPage.js';
 import AOS from 'aos';
@@ -60,7 +60,7 @@ function App() {
           </Routes>
           <Footer />  
         </div>
-      <ScrollToTop />    
+      {/* <ScrollToTop />     */}
       </Router>
     </div>
   );

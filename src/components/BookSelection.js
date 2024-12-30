@@ -1,9 +1,10 @@
 import React from 'react'
 import '../css/bookselection.css'
-import { Link } from "react-router-dom"
-import romanceImg from '../imgFolder/wedding-invitation.png'
+import { HashLink } from 'react-router-hash-link';import romanceImg from '../imgFolder/wedding-invitation.png'
 import scienceImg from '../imgFolder/science.png'
 import magicpotionImg from '../imgFolder/magic-potion.png'
+
+
 
 
 const BookSelection = () => {
@@ -16,10 +17,9 @@ const BookSelection = () => {
               <p className='card-title'>Fantasy</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
               <section className='hover-text'>✨ Hover ✨</section>
-              <Link 
+              <HashLink
               to="/boxes#fantasy"
-              preventScrollReset
-              ><button className='secondary-btn'>Learn More</button></Link>
+              ><button className='secondary-btn'>Learn More</button></HashLink>
             </div>
         </div>
         <div className='card'>
@@ -28,10 +28,9 @@ const BookSelection = () => {
               <p className='card-title'>Romance</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
               <section className='hover-text'>✨ Hover ✨</section>
-              <Link 
+              <HashLink 
               to="/boxes#romance"
-              preventScrollReset
-              ><button className='secondary-btn'>Learn More</button></Link>
+              ><button className='secondary-btn'>Learn More</button></HashLink>
             </div>
         </div>
         <div className='card'>
@@ -40,10 +39,9 @@ const BookSelection = () => {
               <p className='card-title'>Science Fiction</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
               <section className='hover-text'>✨ Hover ✨</section>
-              <Link 
+              <HashLink
               to="/boxes#science-fiction"
-              preventScrollReset
-              ><button className='secondary-btn'>Learn More</button></Link>
+              ><button className='secondary-btn'>Learn More</button></HashLink>
             </div>
         </div>
       </div>
