@@ -1,15 +1,13 @@
 import React from 'react'
 import '../css/bookselection.css'
-import { HashLink } from 'react-router-hash-link';import romanceImg from '../imgFolder/wedding-invitation.png'
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import romanceImg from '../imgFolder/wedding-invitation.png'
 import scienceImg from '../imgFolder/science.png'
 import magicpotionImg from '../imgFolder/magic-potion.png'
 
-
-
-
 const BookSelection = () => {
   return (
-
       <div className='book-selection-wrapper' id='book-sub'>
         <div className='card'>
             <div className='card-wrapper'>
@@ -17,9 +15,9 @@ const BookSelection = () => {
               <p className='card-title'>Fantasy</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
               <section className='hover-text'>✨ Hover ✨</section>
-              <HashLink
+              <Link
               to="/boxes#fantasy"
-              ><button className='secondary-btn'>Learn More</button></HashLink>
+              ><button className='secondary-btn'>Learn More</button></Link>
             </div>
         </div>
         <div className='card'>

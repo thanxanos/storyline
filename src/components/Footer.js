@@ -1,20 +1,27 @@
 import '../css/footer.css'
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router'
 
 const Footer = () => {
-  const element = document.getElementById("shop/#shop-wrapper");
-
-
+  const {hash, key} = useLocation()
+  useEffect(()=>{
+      if(hash){
+        const targetElement = document.getElementById(hash.slice(1))
+          targetElement?.scrollIntoView({behavior: 'smooth'})
+      }
+  }, [key, hash])
 
   return (
     <div className='footer-column'>
       <div className='footer-wrapper'>
         <div className='customer-wrapper'>
           <h2>Customers</h2>
-          <HashLink to='/contact#faq'>
-            <button className='secondary-btn'>FAQ</button></HashLink>
+          <Link 
+          to='/contact#faq'
+          >
+            <button className='secondary-btn'>FAQ</button></Link>
           <HashLink to='/contact#customer-service'>
             <button className='secondary-btn'>Customer Support</button>
           </HashLink>

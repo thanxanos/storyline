@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import BookRotator from './LeftLogo.js'
 import MidSection from './MidSection.js'
 import Reviews from './Reviews.js'

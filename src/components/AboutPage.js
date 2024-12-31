@@ -4,8 +4,8 @@ import '../css/aboutpage.css'
 const AboutPage = () => {
   return (
     <div className='about-wrapper'>
-      <div className='writers'><p>Our Writers</p></div>
-      <div className='artists'><p>Our Artists</p></div>
+      <div id='writers'><p>Our Writers</p></div>
+      <div id='artists'><p>Our Artists</p></div>
     </div>
   )
 }
