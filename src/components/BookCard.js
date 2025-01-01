@@ -1,6 +1,7 @@
 import React from 'react'
 import "../css/bookcard.css";
 
+
 const BookCard = ({bookInfo}) => {
   return (
     <div className='book-card-wrapper'> 

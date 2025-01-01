@@ -1,10 +1,13 @@
 import '../css/footer.css'
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router'
+import SubscribeModal from './SubscribeModal';
 
 const Footer = () => {
+    const [openPopup, setOpenPopup] = useState(false)
+  
   const {hash, key} = useLocation()
   useEffect(()=>{
       if(hash){
@@ -40,18 +43,25 @@ const Footer = () => {
             <button className='secondary-btn'>Past Editions</button></HashLink>
         </div>
 
-        <div className='newsletter-wrapper'>
+        <div className='newsletter-wrapper' id='newsletter-wrapper'>
           <h2>Sign Up for our Newsletter</h2>
-          <form>
+          <div className='sub-form'>
             <input type='text' placeholder='Your email' className='email-input' />
-            <button className='tertiary-btn'>SUBSCRIBE </button>
-          </form>
+            <button 
+            className='tertiary-btn'
+            onClick={() => setOpenPopup(true)}
+            >SUBSCRIBE </button>
+          </div>
         </div>
       </div>
       <div className='attribute'>
           <a href="https://www.flaticon.com/authors/upnow-graphic" title="icons">Icons created by Upnow Graphic - Flaticon</a>
           <p><a href="https://www.flaticon.com/free-stickers/reading" title="reading stickers">Reading sticker created by Stickers - Flaticon</a></p>
         </div>
+        {
+        openPopup && 
+        <SubscribeModal openPopup={openPopup} setOpenPopup={setOpenPopup} />
+      }
     </div>
   )
 }

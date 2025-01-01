@@ -62,7 +62,7 @@
   color: #BCBBD2;
 }
 
-.newsletter-wrapper form {
+.newsletter-wrapper .sub-form {
   display: flex;
   flex-direction: row;
 }

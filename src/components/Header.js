@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import LoginSignup from './LoginSignup';
@@ -10,7 +11,7 @@ const Header = () => {
   const [openPopup, setOpenPopup] = useState(false)
   
   return (
-    <div className='header-wrapper'>
+    <div className='header-wrapper' id='top'>
       <div className='sub-header-wrapper'>
         <div className='link-wrapper'>
           <ul>
@@ -23,7 +24,7 @@ const Header = () => {
           </ul>
         </div>
         <div className='side-wrapper'>
-          <button type="submit" className='secondary-btn'>Subscribe Now</button>
+          <HashLink to='#newsletter-wrapper'><button type="submit" className='secondary-btn'>Subscribe Now</button></HashLink>
           <button
           onClick={() => setOpenPopup(true)}
           className='user-btn'>            
