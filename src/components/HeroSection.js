@@ -1,5 +1,5 @@
 import '../css/herosection.css'
-import { FaArrowDown } from "react-icons/fa";
+// import { FaArrowDown } from "react-icons/fa";
 import React from 'react'
 
 

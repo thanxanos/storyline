@@ -1,5 +1,5 @@
 import '../css/leftlogo.css';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
 import HeroSection from './HeroSection';
 import bookImg from '../imgFolder/book_logo.png';
@@ -11,7 +11,8 @@ const LeftLogo = () => {
       <div className='bookwrapper'>
             <div className='hero-card-wrapper'>
               <div className='hero-card'>
-                <img className='book-logo-img' src={bookImg} />
+                <img className='book-logo-img' alt='book-logo'
+                src={bookImg} />
                 <Link 
                 to="book-sub" 
                 spy={true}

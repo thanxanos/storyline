@@ -7,7 +7,7 @@ const BookCard = ({bookInfo}) => {
     <div className='book-card-wrapper'> 
       <div key={bookInfo.id} className='book-card'>
         <div className='internal-book-wrapper'>
-        <img src={bookInfo.image_url}/>
+        <img src={bookInfo.image_url} alt='book-image'/>
         <p><b>{bookInfo.title}</b></p>
         <p>by {bookInfo.authors}</p>
         <button id="book-btn" className="primary-btn">Add to cart</button>

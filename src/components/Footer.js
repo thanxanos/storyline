@@ -1,6 +1,5 @@
 import '../css/footer.css'
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router'
 import SubscribeModal from './SubscribeModal';

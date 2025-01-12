@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import LoginSignup from './LoginSignup';
-import bookStack from '../imgFolder/magic-book.png'
+// import bookStack from '../imgFolder/magic-book.png'
 import '../css/header.css'
 
 const Header = () => {

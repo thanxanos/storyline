@@ -1,8 +1,7 @@
 import '../css/review.css'
 import React from 'react'
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
-import secondaryShapes from '../imgFolder/secondary_shapes.png'
+// import secondaryShapes from '../imgFolder/secondary_shapes.png'
 import reviewOne from '../imgFolder/review_one.png'
 import reviewTwo from '../imgFolder/review_two.png'
 import reviewThree from '../imgFolder/review_three.png'
@@ -16,7 +15,7 @@ const Reviews = () => {
         </div>
         <div className='review-card-wrapper'>
           <div className='review-card'>
-            <img className='review-img' src={reviewOne} />
+            <img className='review-img' alt='review-one-image' src={reviewOne} />
             <div className='review-text-wrapper'>
               <span><h1>“All the best books!”</h1></span>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
@@ -25,7 +24,7 @@ const Reviews = () => {
           </div>
 
           <div className='review-card'>
-            <img className='review-img' src={reviewTwo} />
+            <img className='review-img' alt='review-two-image' src={reviewTwo} />
             <div className='review-text-wrapper'>
               <span><h1>“Love my Storyline Scifi Box!”</h1></span>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
@@ -34,7 +33,7 @@ const Reviews = () => {
           </div>
 
           <div className='review-card'>
-            <img className='review-img' src={reviewThree} />
+            <img className='review-img' alt='review-three-image' src={reviewThree} />
             <div className='review-text-wrapper'>
               <span><h1>“Amazing lineup!”</h1></span>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
