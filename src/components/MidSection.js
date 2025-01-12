@@ -7,7 +7,7 @@ const MidSection = () => {
     <div className='mid-wrapper'>
       <h1 className='mid-logo-text'>Rare covers, rare selection</h1>
       <h3 className='mid-h3-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</h3>
-      <img className='logo-img' src={logoImg} />
+      <img className='logo-img' alt='logo-img' src={logoImg} />
     </div>
   )
 }

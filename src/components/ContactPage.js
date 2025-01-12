@@ -61,7 +61,7 @@ const ContactPage = () => {
             <div className='cs-child'><FontAwesomeIcon icon={faLocationDot} className='contact-icon' /><h3>Visit us</h3><p>1198 Cambridge Place</p><p>Edgewood, MD</p></div>
           </div>
           </div>
-        <img className='logo-img' src={logoImg} />
+        <img className='logo-img' alt='book-logo-image' src={logoImg} />
         <div id="tos">
           <h2>Terms of Service</h2>
           <p><b>OVERVIEW</b></p>

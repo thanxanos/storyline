@@ -8,6 +8,7 @@ import ErrorPage from './components/ErrorPage.js'
 import ContactPage from './components/ContactPage.js'
 import Footer from './components/Footer'
 import BoxPage from './components/BoxPage.js';
+import LoginSignup from './components/LoginSignup.js'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -52,11 +53,12 @@ function App() {
         <Header />
         <Routes>
             <Route path="/" Component={Landing} />
-            <Route path='/boxes' Component={BoxPage} > </Route>
+            <Route path='/boxes' Component={BoxPage} />
             <Route path="/shop" Component={ShopPage} />
             <Route path="/about" Component={AboutPage} />
             <Route path="/contact" Component={ContactPage} />
             <Route path="/*" Component={ErrorPage}/>
+            <Route path='/login' Component={LoginSignup} />
           </Routes>
           <Footer />  
         </div>

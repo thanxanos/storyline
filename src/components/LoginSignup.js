@@ -14,13 +14,13 @@ const LoginSignup = (props) => {
             className="close-btn">
               <FontAwesomeIcon icon={faX} />
           </button>
-          <img className='book-login-img' src={bookLogIn} />
+          <img className='book-login-img' alt='book-logo-image' src={bookLogIn} />
           <h2>Your next book awaits!</h2>
           <form>
           <input type='text' placeholder='email' className='login-email-input' />
           <input type='text' placeholder='password' className='login-password-input' />
           <button type='submit' className='primary-btn'>Log in</button>
-          <p><b>No account? <a href="">Register</a></b></p>
+          <p><b>No account? <a href="/login">Register</a></b></p>
           </form>
         </div>
       </div>
