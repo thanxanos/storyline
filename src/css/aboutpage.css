@@ -1,3 +1,51 @@
 .about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
+  padding: 40px 64px 80px;
+}
+
+#writers {
+  display: flex;
+  background-color: #97BDAD;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.writer-div {
+  font-family: "Aboreto", system-ui;
+  font-size: 24px;
+  padding: 40px;
+  /* width: 660px; */
+}
+
+.writer-p {
+  font-family: "Aleo", serif;
+  padding: 40px;
+}
+
+
+#artists {
+  display: flex;
+  flex-direction: row;
+  background-color: #DE4921;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.artist-div {
+  font-family: "Aboreto", system-ui;
+  font-size: 24px;
+  padding: 40px;
+  /* width: 660px; */
+}
+
+.artists-p {
+  font-family: "Aleo", serif;
 }

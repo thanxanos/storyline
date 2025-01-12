@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   position: absolute;
@@ -13,78 +13,76 @@ body {
 
 .primary-btn {
   border-radius: 50px;
-  border: 2px solid #C4752A;
-  background-color: #C4752A;
+  border: 2px solid #c4752a;
+  background-color: #c4752a;
   padding: 16px 48px 16px 48px;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Roboto Mono", monospace, bold;
   font-weight: 700;
   font-size: 16px;
-	transition: 0.5s;
+  transition: 0.5s;
 }
 
 .primary-btn:hover {
   border-radius: 50px;
-  border: 2px solid #C4752A;
-  background-color: #FFFFFF;
+  border: 2px solid #c4752a;
+  background-color: #ffffff;
   padding: 16px 48px 16px 48px;
   cursor: pointer;
-  color: #C4752A;
+  color: #c4752a;
   font-family: "Roboto Mono", monospace, bold;
   font-weight: 700;
   font-size: 16px;
 }
 
-
 .secondary-btn {
   border-radius: 50px;
-  border: 2px solid #7978A4;
-  background-color: #7978A4;
+  border: 2px solid #7978a4;
+  background-color: #7978a4;
   padding: 16px 48px 16px 48px;
   cursor: pointer;
   min-width: 170px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Roboto Mono", monospace, bold;
   font-weight: 700;
   font-size: 16px;
-	transition: 0.5s;
+  transition: 0.5s;
 }
 
 .secondary-btn:hover {
   border-radius: 50px;
-  border: 2px solid #7978A4;
-  background-color: #FFFFFF;
+  border: 2px solid #7978a4;
+  background-color: #ffffff;
   padding: 16px 48px 16px 48px;
   cursor: pointer;
   min-width: 170px;
-  color: #7978A4;
+  color: #7978a4;
   font-family: "Roboto Mono", monospace, bold;
   font-weight: 700;
   font-size: 16px;
 }
 
-
 .tertiary-btn {
   border-radius: 50px;
-  border: 2px solid #FFFFFF;
-  background-color: #FFFFFF;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   padding: 16px 48px 16px 48px;
   cursor: pointer;
-  color: #805D4F;
+  color: #805d4f;
   font-family: "Roboto Mono", monospace, bold;
   font-weight: 700;
   font-size: 16px;
-	transition: 0.5s;
+  transition: 0.5s;
 }
 
 .tertiary-btn:hover {
   border-radius: 50px;
-  border: 2px solid #C7E6B2;
-  background-color: #C7E6B2;
+  border: 2px solid #c7e6b2;
+  background-color: #c7e6b2;
   padding: 16px 48px 16px 48px;
   cursor: pointer;
-  color: #805D4F;
+  color: #805d4f;
   font-family: "Roboto Mono", monospace, bold;
   font-weight: 700;
   font-size: 16px;
@@ -92,48 +90,92 @@ body {
 
 .user-btn {
   border-radius: 50px;
-  border: 2px solid #C4752A;
-  background-color: #C4752A;
+  border: 2px solid #c4752a;
+  background-color: #c4752a;
   padding: 14px 17px 14px 17px;
   cursor: pointer;
-	transition: 0.5s;
+  transition: 0.5s;
   margin-left: 24px;
 }
 
 .user-btn svg {
   height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .user-btn:hover {
   border-radius: 50px;
-  border: 2px solid #FFFFFF;
-  background-color: #FFFFFF;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   padding: 14px 17px 14px 17px;
   cursor: pointer;
   margin-left: 24px;
-  color: #C4752A;
+  color: #c4752a;
 }
 
 .user-btn:hover svg {
-  color: #C4752A;
+  color: #c4752a;
 }
 
 .close-btn {
   border-radius: 50px;
-  border: 2px solid #FFFFFF;
-  background-color: #FFFFFF;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   padding: 14px 17px 14px 17px;
   cursor: pointer;
-	transition: 0.5s;
+  transition: 0.5s;
   margin-left: 24px;
 }
 
 .close-btn:hover {
   border-radius: 50px;
-  border: 2px solid #FFFFFF;
-  background-color: #FFFFFF;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   padding: 14px 17px 14px 17px;
   cursor: pointer;
   margin-left: 24px;
+}
+
+.accordion-wrapper {
+  display: flex;
+}
+
+.accordion {
+  width: 65vw;
+  /* height: 95vh; */
+}
+
+.accordion h2 {  
+  font-style: "Aboreto", system-ui;
+}
+
+.item {
+  background: #F8EEE2;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.title {
+  color: #c4752a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Aleo", serif;
+}
+
+.content {
+  font-family: "Istok Web", sans-serif;
+  color: #744416;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0,1,0,1);
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  /* padding-bottom: 15px; */
+  transition: all 0.4s cubic-bezier(1,0,1,0);
 }

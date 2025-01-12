@@ -25,22 +25,22 @@ const Footer = () => {
           to='/contact#faq'
           >
             <button className='secondary-btn'>FAQ</button></Link>
-          <HashLink to='/contact#customer-service'>
+          <Link to='/contact#customer-service'>
             <button className='secondary-btn'>Customer Support</button>
-          </HashLink>
-          <HashLink to='/contact#tos'>
+          </Link>
+          <Link to='/contact#tos'>
             <button className='secondary-btn'>Terms of Service</button>
-          </HashLink>
+          </Link>
         </div>
 
         <div className='book-wrapper'>
           <h2>Books</h2>
-          <HashLink to='/about#writers'>
-            <button className='secondary-btn'>Our Writers</button></HashLink>
-          <HashLink to='/about#artists'>
-            <button className='secondary-btn'>Our Artists</button></HashLink>
-          <HashLink to="/shop#shop">
-            <button className='secondary-btn'>Past Editions</button></HashLink>
+          <Link to='/about#writers'>
+            <button className='secondary-btn'>Our Writers</button></Link>
+          <Link to='/about#artists'>
+            <button className='secondary-btn'>Our Artists</button></Link>
+          <Link to="/shop#shop">
+            <button className='secondary-btn'>Past Editions</button></Link>
         </div>
 
         <div className='newsletter-wrapper' id='newsletter-wrapper'>

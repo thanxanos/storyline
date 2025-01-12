@@ -24,7 +24,7 @@ const Header = () => {
           </ul>
         </div>
         <div className='side-wrapper'>
-          <HashLink to='#newsletter-wrapper'><button type="submit" className='secondary-btn'>Subscribe Now</button></HashLink>
+          <HashLink smooth to='#newsletter-wrapper'><button type="submit" className='secondary-btn'>Subscribe Now</button></HashLink>
           <button
           onClick={() => setOpenPopup(true)}
           className='user-btn'>            

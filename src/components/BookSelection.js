@@ -26,9 +26,9 @@ const BookSelection = () => {
               <p className='card-title'>Romance</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
               <section className='hover-text'>✨ Hover ✨</section>
-              <HashLink 
+              <Link 
               to="/boxes#romance"
-              ><button className='secondary-btn'>Learn More</button></HashLink>
+              ><button className='secondary-btn'>Learn More</button></Link>
             </div>
         </div>
         <div className='card'>
@@ -37,9 +37,9 @@ const BookSelection = () => {
               <p className='card-title'>Science Fiction</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor varius lobortis. In hac habitasse platea dictumst. Curabitur id porta risus. Vestibulum faucibus.</p>
               <section className='hover-text'>✨ Hover ✨</section>
-              <HashLink
+              <Link
               to="/boxes#science-fiction"
-              ><button className='secondary-btn'>Learn More</button></HashLink>
+              ><button className='secondary-btn'>Learn More</button></Link>
             </div>
         </div>
       </div>
