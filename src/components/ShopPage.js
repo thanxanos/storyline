@@ -42,6 +42,7 @@ const ShopPage = () => {
   return (
     <div className="shop-wrapper" id="shop">
       <div className="side-menu">
+      <h3>work in progress</h3>
         <div className="menu-list">
           <div className="menu-text" onClick={() => defaultFilter()}><p>All</p></div>
           <div className="menu-text" onClick={() => FilterRomance()}><p>Romance</p></div>
