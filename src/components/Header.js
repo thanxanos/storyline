@@ -9,9 +9,6 @@ import '../css/header.css'
 
 const Header = () => {
   const [openPopup, setOpenPopup] = useState(false)
-  
-  //<FontAwesomeIcon icon={faXmark} />
-//<FontAwesomeIcon icon={faBars } />
 
   return (
     <div className='header-wrapper' id='top'>
@@ -26,6 +23,8 @@ const Header = () => {
             <li><Link to='/contact'>contact</Link></li>
           </ul>
         </div>
+        <FontAwesomeIcon icon={faXmark} />
+        <FontAwesomeIcon icon={faBars } />
         <div className='side-wrapper'>
           <HashLink smooth to='#newsletter-wrapper'><button type="submit" className='secondary-btn'>Subscribe Now</button></HashLink>
           <button
