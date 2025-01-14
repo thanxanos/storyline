@@ -23,8 +23,7 @@ const Header = () => {
             <li><Link to='/contact'>contact</Link></li>
           </ul>
         </div>
-        <FontAwesomeIcon icon={faXmark} />
-        <FontAwesomeIcon icon={faBars } />
+
         <div className='side-wrapper'>
           <HashLink smooth to='#newsletter-wrapper'><button type="submit" className='secondary-btn'>Subscribe Now</button></HashLink>
           <button
@@ -33,6 +32,8 @@ const Header = () => {
           <FontAwesomeIcon icon={faUser} />
           </button>
       </div>
+      { !openPopup ? <div></div> : <div><FontAwesomeIcon icon={faBars} />
+      <FontAwesomeIcon icon={faXmark} /></div> }
       </div>
 
       {
