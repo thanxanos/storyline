@@ -10,11 +10,11 @@ const Reviews = () => {
   return (
     <div className='reviews'>
       <div className='reviews-wrapper'>
-        <div className='review-logo-text'>
+        <div data-aos="fade-down" delay="150" data-aos-duration="1200" className='review-logo-text'>
           <p>What’s your Storyline?</p>
         </div>
         <div className='review-card-wrapper'>
-          <div className='review-card'>
+          <div data-aos="fade-down" delay="200" data-aos-duration="1500" className='review-card'>
             <img className='review-img' alt='review-one-image' src={reviewOne} />
             <div className='review-text-wrapper'>
               <span><h1>“All the best books!”</h1></span>
@@ -23,7 +23,7 @@ const Reviews = () => {
             </div>
           </div>
 
-          <div className='review-card'>
+          <div data-aos="fade-down" delay="200" data-aos-duration="1500" className='review-card'>
             <img className='review-img' alt='review-two-image' src={reviewTwo} />
             <div className='review-text-wrapper'>
               <span><h1>“Love my Storyline Scifi Box!”</h1></span>
@@ -32,7 +32,7 @@ const Reviews = () => {
             </div>
           </div>
 
-          <div className='review-card'>
+          <div data-aos="fade-down" delay="200" data-aos-duration="1500" className='review-card'>
             <img className='review-img' alt='review-three-image' src={reviewThree} />
             <div className='review-text-wrapper'>
               <span><h1>“Amazing lineup!”</h1></span>
@@ -42,8 +42,8 @@ const Reviews = () => {
           </div>
         </div>
       <div className='review-final'>
-        <p>Excited? So are we!</p>
-        <Link to='/shop#top'><button className='primary-btn'>Get Started</button></Link>
+        <p data-aos="fade-up" delay="150" data-aos-duration="1000">Excited? So are we!</p>
+        <Link data-aos="fade-up" delay="150" data-aos-duration="1000" to='/shop#top'><button className='primary-btn'>Get Started</button></Link>
         </div>
       </div>
     </div>

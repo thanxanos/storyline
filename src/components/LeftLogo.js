@@ -10,7 +10,7 @@ const LeftLogo = () => {
     <div className="hero-wrapper">
       <div className='bookwrapper'>
             <div className='hero-card-wrapper'>
-              <div className='hero-card'>
+              <div data-aos="fade-up" delay="80" data-aos-duration="1100" className='hero-card'>
                 <img className='book-logo-img' alt='book-logo'
                 src={bookImg} />
                 <Link 
@@ -19,7 +19,7 @@ const LeftLogo = () => {
                 smooth={true} 
                 duration={500}
                 >
-                <button type="submit" className='primary-btn'>Choose your adventure</button>
+                <button data-aos="fade-up" delay="150" data-aos-duration="1200" type="submit" className='primary-btn'>Choose your adventure</button>
                 </Link>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import LoginSignup from './LoginSignup';
 // import bookStack from '../imgFolder/magic-book.png'
 import '../css/header.css'
@@ -10,9 +10,12 @@ import '../css/header.css'
 const Header = () => {
   const [openPopup, setOpenPopup] = useState(false)
   
+  //<FontAwesomeIcon icon={faXmark} />
+//<FontAwesomeIcon icon={faBars } />
+
   return (
     <div className='header-wrapper' id='top'>
-      <div className='sub-header-wrapper'>
+      <div className='navbar'>
         <div className='link-wrapper'>
           <ul>
             {/* <li><Link to='/'><img className='book-stack' src={bookStack} /></Link></li> */}
