@@ -3,7 +3,7 @@ import '../css/boxpage.css'
 
 function BoxPage() {
   return (
-    <div>
+    <div id="top">
       <h3>work in progress</h3>
       <div id="fantasy">Fantasy</div>
       <div id="romance">Romance</div>

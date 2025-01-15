@@ -43,7 +43,7 @@ const Reviews = () => {
         </div>
       <div className='review-final'>
         <p data-aos="fade-up" delay="150" data-aos-duration="1000">Excited? So are we!</p>
-        <Link data-aos="fade-up" delay="150" data-aos-duration="1000" to='/shop#top'><button className='primary-btn'>Get Started</button></Link>
+        <Link data-aos="fade-up" delay="150" data-aos-duration="1000" to='/boxes#top'><button className='primary-btn'>Get Started</button></Link>
         </div>
       </div>
     </div>

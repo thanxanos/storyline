@@ -24,6 +24,13 @@
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
+.register-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
 .login-card {
   display: flex;
   flex-direction: column;
@@ -37,8 +44,14 @@
   height: auto;
 }
 
-.login-card a {
+.login-card u {
   color: #7978A4;
+  cursor: pointer;
+}
+
+.register-card u {
+  color: #7978A4;
+  cursor: pointer;
 }
 
 .login-card form {
@@ -49,7 +62,23 @@
   gap: 32px;
 }
 
+.register-card form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
 .login-card form button {
+  width: 100%;
+}
+
+.register-card form button {
+  width: 100%;
+}
+
+.register-card form button {
   width: 100%;
 }
 
@@ -76,13 +105,30 @@
 
 .close-btn {
   position: absolute;
-  margin-top: -60px;
+  margin-top: -53px;
   margin-left: 360px;
+  transition: none;
 }
 
 .close-btn:hover {
-  margin-top: -60px;
+  position: absolute;
+  margin-top: -53px;
   margin-left: 360px;
+  transition: none;
+}
+
+.register-card .close-btn {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 360px;
+  transition: none;
+}
+
+.register-card .close-btn:hover {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 360px;
+  transition: none;
 }
 
 .subscribe-full {
@@ -131,3 +177,4 @@
   margin-top: -90px;
   margin-left: 380px;
 }
+
