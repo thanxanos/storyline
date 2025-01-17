@@ -13,7 +13,6 @@ import '../css/header.css'
 const Header = () => {
   const [openPopup, setOpenPopup] = useState(false)
   const [openNav, setOpenNav] = useState(false)
-  const [visible, setVisible] = useState(false);
   const showSideNavbar = () => setOpenNav(!openNav);
 
   console.log(visible)
