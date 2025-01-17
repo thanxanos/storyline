@@ -14,8 +14,6 @@ const Header = () => {
   const [openPopup, setOpenPopup] = useState(false)
   const [openNav, setOpenNav] = useState(false)
   const showSideNavbar = () => setOpenNav(!openNav);
-
-  console.log(visible)
   return (
     <div className='header-wrapper' id='top'>
     <div>
