@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 const ShopPage = () => {
-  const API_URL = 'https://example-data.draftbit.com/books?_limit=25'
+  const API_URL = 'https://example-data.draftbit.com/books?_limit=24'
   const [books, setBooks] = useState([])
   const [bookResult, setBookResult] = useState(books)
   const [searchTerm, setSearchTerm] = useState('')
