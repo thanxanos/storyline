@@ -21,13 +21,14 @@
 #customer-service {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .customer-service-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 120px;
+  gap: 10%;
 }
 
 .cs-child {

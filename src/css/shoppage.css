@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: row;
   min-height: 53px;
-  width: 550px;
+  width: 80%;
   border-radius: 50px;
   border: 2px solid #E6E6E6;
   background-color: #ffff;
