@@ -26,7 +26,7 @@ const Header = () => {
             <li><Link to='/shop' onClick={() => setOpenNav(false)}>shop</Link></li>
             <li><Link to='/about' onClick={() => setOpenNav(false)}>about us</Link></li>
             <li><Link to='/contact' onClick={() => setOpenNav(false)}>contact</Link></li>
-            {!openNav ? '' : <li onClick={() => setOpenPopup(true)} ><a href='javascript:void(0);'>log in</a></li>}
+            {!openNav ? '' : <li onClick={() => setOpenPopup(true)} ><a href='/#'>log in</a></li>}
           </ul>
         </div>
 
