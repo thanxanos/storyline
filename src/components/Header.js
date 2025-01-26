@@ -26,23 +26,17 @@ const Header = () => {
             <li><Link to='/shop' onClick={() => setOpenNav(false)}>shop</Link></li>
             <li><Link to='/about' onClick={() => setOpenNav(false)}>about us</Link></li>
             <li><Link to='/contact' onClick={() => setOpenNav(false)}>contact</Link></li>
-            {!openNav ? '' : <li onClick={() => setOpenPopup(true)} ><p>log in</p></li>}
           </ul>
-        </div>
-
+        </div>      
         <div className='side-wrapper'>
           <HashLink smooth to='#newsletter-wrapper'><button type="submit" className='secondary-btn'>Subscribe Now</button></HashLink>
-          <button
-          onClick={() => setOpenPopup(true)}
-          className='user-btn'>            
-          <FontAwesomeIcon icon={faUser} />
-          </button>
+            <button
+            onClick={() => setOpenPopup(true)}
+            className='user-btn'>
+            <FontAwesomeIcon icon={faUser} />
+            </button>
+        </div>
       </div>
-      </div>
-      {
-        openPopup && 
-        <LoginSignup openPopup={openPopup} setOpenPopup={setOpenPopup} />
-      }
       </div>
       <div className='nav-toggle'>
           <div className="menu-btn" onClick={showSideNavbar}>

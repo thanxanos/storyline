@@ -89,59 +89,104 @@
 
 .nav-toggle {
   visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 998px) {
   
   .link-wrapper {
     display: flex;
-    padding-top: 40px;
     padding-left: 0;
     flex-direction: column;
     position: fixed;
     height: 100vh;
-    min-width: 100vw;
+    min-width: 60vw;
     left: -100%;
     top: 0;
     background-color: #f8f8f9;
     text-align: center;
-    transition: all 0.3s ease;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    gap: 5%;
   }
   .nav-toggle {
     visibility: visible;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    height: 136px;
-    z-index: 999;
+    transition: all 0.3s ease;
+    -webkit-backface-visibility: hidden;
   }
 
   #grab-icon {
     position: fixed;
-    top: 50px;
-    right: 50px;
+    left: 32px;
+    background-color: white;
+    border-color: white;
   }
 
   .side-btn {
-    height: 24px;
+    background-color: #C7E6B2;
+    border: 2px solid #C7E6B2;
     width: auto;
     cursor: pointer;
+    border-radius: 50px;
+    padding: 32px;
+    height: 24px;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 24px;
+    left: 32px;
+    height: 86px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -webkit-backface-visibility: hidden;
+  }
+
+  svg.side-btn {
+    height: 18px;
+    width: 18px;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .menu-btn {
+      animation: scroll-shadow linear both;
+      animation-timeline: scroll();
+      animation-range: 0ex 5ex;
+    }
+  
+    @keyframes scroll-shadow {
+      from {
+        box-shadow: none;
+      }
+  
+      to {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        ;
+      }
+    }
   }
 
   .link-wrapper.active{
     flex: 0;
   }
-  .navbar > .link-wrapper ul {
+.link-wrapper ul {
     list-style-type: none;
     padding: 0px;
     width: 100%;
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
   }
 
   .link-wrapper li>* {
     display: inline-block;
-    margin: 16px;
     font-size: 2rem;
+    margin: 0;
+  }
+
+  .link-wrapper li {
+    margin: 0;
   }
 
   .link-wrapper.active {
@@ -149,12 +194,9 @@
     left: 0;
   }
 
-  .navbar > .side-wrapper {
-    display: none;
-  }
-
-
 }
+
+
 
 /* .book-stack {
   position: absolute;
