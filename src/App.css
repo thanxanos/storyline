@@ -4,7 +4,7 @@
 
 body {
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
 .main-wrapper {
   display: flex;

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100vw;
+  width: auto;
   background-color: #F8F8F9;
 }
 
@@ -13,7 +13,6 @@
 
 .review-logo-text {
   background-color: #F8F8F9;
-  width: 100vw;
   font-family: "Aboreto", system-ui;
   font-weight: 400;
   font-size: 64px;

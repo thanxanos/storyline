@@ -35,6 +35,7 @@ const Header = () => {
             className='user-btn'>
             <FontAwesomeIcon icon={faUser} />
             </button>
+            
         </div>
       </div>
       </div>
@@ -48,6 +49,10 @@ const Header = () => {
             }
           </div>
         </div>
+        {
+            openPopup && 
+            <LoginSignup openPopup={openPopup} setOpenPopup={setOpenPopup} />
+          }
     </div>
   )
 }

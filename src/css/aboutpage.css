@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  padding: 40px 64px 80px;
+  height: auto;
+  padding: 80px 0 80px 0;
 }
 
 #writers {
@@ -14,17 +14,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 40px 64px 80px;
 }
 
 .writer-div {
   font-family: "Aboreto", system-ui;
-  font-size: 24px;
+  font-size: 36px;
   padding: 40px;
   /* width: 660px; */
 }
 
 .writer-p {
   font-family: "Aleo", serif;
+  font-size: 24px;
   padding: 40px;
 }
 
@@ -36,16 +38,19 @@
   color: white;
   align-items: center;
   justify-content: center;
+  padding: 40px 64px 80px;
 }
 
 
 .artist-div {
   font-family: "Aboreto", system-ui;
-  font-size: 24px;
+  font-size: 36px;
   padding: 40px;
   /* width: 660px; */
 }
 
-.artists-p {
+.artist-p {
   font-family: "Aleo", serif;
+  font-size: 24px;
+  padding: 40px;
 }
