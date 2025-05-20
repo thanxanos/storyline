@@ -1,14 +1,54 @@
+.bookbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  background-color: #F8F8F9;
+  padding: 80px 0 80px 0;
+  width: 100%;
+}
+
+.bookbox-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Aleo", serif;
+  font-size: 24px;
+  color: #1A2028;
+  padding: 0 40px 120px 40px;
+}
+
+.bookbox {
+  width: auto;
+  height: 500px;
+  margin-right: 40px;
+  border-radius: 10px;
+}
+
+.bookbox-wrapper h1 {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-size: 64px;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 64px;
+  color: #7978a4;
+}
+
 #fantasy {
   height: 600px;
-  background-color: azure;
+  text-align: center;
+
 }
 
 #romance {
   height: 600px;
-  background-color:blanchedalmond;
+
 }
 
 #science-fiction {
   height: 600px;
-  background-color:rgb(216, 205, 255);
+
 }

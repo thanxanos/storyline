@@ -70,7 +70,8 @@
 }
 
 .review-text-wrapper{
-  margin: 0 32px 0 200px
+  margin: 0 32px 0 200px;
+  color: #1A2028;
 }
 
 .review-text-wrapper p {
