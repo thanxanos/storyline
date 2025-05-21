@@ -5,6 +5,7 @@
 body {
   position: absolute;
   width: 100%;
+  overflow-x: hidden;
 }
 .main-wrapper {
   display: flex;
